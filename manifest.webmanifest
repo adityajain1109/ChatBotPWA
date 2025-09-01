@@ -1,0 +1,17 @@
+{
+  "name": "BotNext Chatbot",
+  "short_name": "BotNext",
+  "description": "Chatbot powered by PWA",
+  "start_url": "/Chatbot/BotNext2.html",
+  "scope": "/Chatbot/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3367D6",
+  "icons": [
+    {
+      "src": "/FinalChatbot/bnlogo.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

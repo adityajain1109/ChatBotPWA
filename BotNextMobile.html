@@ -1,0 +1,200 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <title>BotNext</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="BotNextMobile.css">
+	<link type="text/css" rel="stylesheet" href="styles.css">
+	<link rel="manifest" href="/Chatbot/manifest.webmanifest">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainWrapper {
+            margin: 0 auto;
+        }
+
+        .mainHeader {
+            height: 60px;
+            padding: 0 2.5rem;
+            display: none;
+            align-items: center;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            /* box-shadow: rgba(0,0,0,0.2) 0 2px 2px 0; */
+            border-bottom: 2px solid #0090da;
+        }
+
+     
+
+        .mainBody {
+            /* background-image: url("./assets/img/indusind12.jpg"); */
+            background-image: url("./img/USRetailBankimg.png");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+		@media (max-width: 768px) {
+            .mainBody {
+                background-position: 0% !important;
+                background-size: 100% 100% !important;
+                background-repeat: no-repeat !important;
+                background-image: url("./img/USRetailMobileBanking.png") !important;
+            }
+        }
+
+        .mainContent {
+
+            font-size: 45px;
+            line-height: 44px;
+            letter-spacing: -0.3px;
+            font-family: 'Arial', 'Helvetica', 'sans-serif';
+            font-weight: 600;
+            height: 100vh;
+            display: none;
+            max-width: 50%;
+            align-items: center;
+            color: #fff;
+            text-align: left;
+            padding: 50px 0 0 50px;
+        }
+		.chatContainer {
+    position: absolute;
+    height: calc(100% - 7rem);
+    width: 360px;
+    right: 1rem;
+    bottom: 1rem;
+}
+    </style>
+   
+</head>
+
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">XYZ Bank</a>
+            <ul class="nav-links">
+                <li><a href="#bank">Bank</a></li>
+                <li><a href="#borrow">Borrow</a></li>
+                <li><a href="#invest">Invest</a></li>
+                <li><a href="#protect">Protect</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <a href="#" class="cta-button">Become a Member</a>
+            <button class="mobile-menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Sit back, relax and earn a higher rate</h1>
+                        <p>Experience modern banking with premium rates and unmatched security</p>
+                        
+                        <div class="rate-highlight">
+                            <div class="apy-rate">5.35% APY</div>
+                            <div class="rate-description">Lock in with an 18-month jumbo certificate</div>
+                            <a href="#" class="learn-more-btn">
+                                → Learn More
+                            </a>
+                        </div>
+
+                        <div class="services-grid">
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="./img/mobile.png" alt="Mobile Banking" width="50" height="50">
+        </div>
+        <h3>Mobile Banking</h3>
+    </div>
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="./img/credit.png" alt="Credit Cards" width="50" height="50">
+        </div>
+        <h3>Credit Cards</h3>
+    </div>
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="./img/statement.png" alt="Statements" width="50" height="50">
+        </div>
+        <h3>Statements</h3>
+    </div>
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="./img/calculator.png" alt="Calculators" width="50" height="50">
+        </div>
+        <h3>Calculators</h3>
+    </div>
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="./img/autoloan.png" alt="Auto Loans" width="50" height="50">
+        </div>
+        <h3>Auto Loans</h3>
+    </div>
+</div>
+                    </div>
+
+                    <div class="hero-forms">
+                        <div class="banking-section">
+                            <h2>Online Banking</h2>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Username" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="secure-login-btn">Secure Log In</button>
+                                <div class="form-links">
+                                    <a href="#">Set up in 1 Minute</a>
+                                    <a href="#">Security Center</a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="atm-finder">
+                            <h2>Find ATMs</h2>
+                            <div class="search-group">
+                                <input type="text" class="form-control" placeholder="City, State or Zip">
+                                <button class="search-btn">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    </div>
+
+    
+
+    
+
+    <div id="chatwidget"></div>
+
+   
+    <script src="BotNextMobile.js"></script>
+</body>
+
+</html>
